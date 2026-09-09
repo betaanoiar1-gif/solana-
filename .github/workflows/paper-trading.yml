@@ -71,7 +71,7 @@ jobs:
           node-version: '20'
 
       - name: Run pinned upstream in Paper Mode
-        run: node runner-fixed.js
+        run: node runner-v2.js
 
       - name: Persist paper state
         if: always()

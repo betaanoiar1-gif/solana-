@@ -1,0 +1,13 @@
+{
+  "name": "solana-paper-trading-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned upstream Solana Trading Bot V3 with an additive, hard-blocked paper trading layer.",
+  "scripts": {
+    "start": "node runner.js",
+    "paper": "node runner.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

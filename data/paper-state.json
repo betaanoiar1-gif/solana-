@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "initializedAt": "2026-09-09T19:49:05.584Z",
+  "initialUsd": 100,
+  "initialSolUsd": 102.85,
+  "initialQuote": 0.9722897423432183,
+  "cashQuote": 0.9722897423432183,
+  "realizedPnlQuote": 0,
+  "trades": [],
+  "positions": {},
+  "nextTradeId": 1
+}

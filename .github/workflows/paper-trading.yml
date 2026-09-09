@@ -3,7 +3,7 @@ name: Paper Trading
 on:
   workflow_dispatch:
   schedule:
-    # Run ~5h30m per cycle, then restart. 7-minute offset avoids the top of the hour.
+    # Temporary test: 5-minute paper run.
     - cron: '7 0,6,12,18 * * *'
 
 concurrency:
@@ -16,11 +16,11 @@ permissions:
 jobs:
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 15
     env:
       PAPER_MODE: 'true'
       PAPER_INITIAL_USD: '100'
-      PAPER_RUN_MINUTES: '330'
+      PAPER_RUN_MINUTES: '5'
       PAPER_STATE_FILE: data/paper-state.json
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
